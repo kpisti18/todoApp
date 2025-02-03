@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #DC3545;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.focim {
+    text-align: center;
+    color: white;
+}
+
+.tema {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.szinek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#zold {
+    background-color: #28A745;
+}
+
+#kek {
+    background-color: #007BFF;
+}
+
+#piros {
+    background-color: #DC3545;
+}
+
+#sarga {
+    background-color: #FFC107;
+}
+
+#zold, #kek, #piros, #sarga {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 4px 6px rgb(0,0,0,0.5);
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+#zold:hover, #kek:hover, #piros:hover, #sarga:hover {
+    transform: scale(1.1);
+}
+
+#gomb {
+    height: 50px;
+    width: 200px;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgb(0,0,0,0.5);
+    transition: ease 0.5s;
+}
+
+#gomb:hover {
+    transform: scale(1.05);
+    background-color: silver;
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgb(0,0,0,0.5);
+    padding: 40px;
+}
+
+#szoveg {
+    height: 50px;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 1.5rem;
+    text-indent: 0.5rem;
+}
+
+.gorget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+/* JS-ből előállított div-ek osztályai */
+.lista {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 10px;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.delete {
+    background-color: #DC3545;
+    color: white;
+    width: 50px;
+    height: 30px;
+    border-radius: 0.5rem;
+    border: none;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+.delete:hover {
+    transform: scale(1.05);
+}
